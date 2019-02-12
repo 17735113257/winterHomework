@@ -10,7 +10,7 @@ $(function () {
                 alert("内容不能为空");
                 return;
             }
-            let li = $("<li></li>").appendTo(todoList).addClass("completed");
+            let li = $("<li></li>").prependTo(todoList).addClass("completed");
             let div = $("<div></div>").appendTo(li).addClass("view");
             let input = $("<input />").appendTo(div)
                 .addClass("toggle")
